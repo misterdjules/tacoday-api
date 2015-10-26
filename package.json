@@ -1,0 +1,16 @@
+{
+  "name": "tacoday-api",
+  "version": "1.0.0",
+  "description": "It's tacos day!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julien Gilli <jgilli@fastmail.fm>",
+  "license": "ISC",
+  "dependencies": {
+    "assert-plus": "^0.1.5",
+    "bunyan": "^1.5.1",
+    "restify": "^4.0.3"
+  }
+}
