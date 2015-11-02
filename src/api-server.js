@@ -74,9 +74,11 @@ function createServer(options, callback) {
 
   var server = restify.createServer({
     name: 'tacoday-api',
-    version: '1.0.0'
+    version: '1.0.0',
+    log: logger
   });
 
+  server.use(restify.requestLogger());
   server.use(restify.acceptParser(server.acceptable));
   server.use(restify.queryParser());
 

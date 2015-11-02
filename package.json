@@ -12,6 +12,7 @@
   "dependencies": {
     "assert-plus": "^0.1.5",
     "bunyan": "^1.5.1",
-    "restify": "^4.0.3"
+    "restify": "^4.0.3",
+    "xregexp": "^3.0.0"
   }
 }
