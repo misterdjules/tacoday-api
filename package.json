@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": " eslint -c .eslintrc src/"
   },
   "author": "Julien Gilli <jgilli@fastmail.fm>",
   "license": "ISC",
   "dependencies": {
     "assert-plus": "^0.1.5",
     "bunyan": "^1.5.1",
+    "eslint": "^1.8.0",
     "restify": "^4.0.3",
     "xregexp": "^3.0.0"
   }
