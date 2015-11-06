@@ -54,7 +54,7 @@ function loadControllersFromDir(controllersDir, server, logger, callback) {
 
       logger.info('controller files paths: %s', controllerFilesPaths);
 
-      controllerFilesPaths.forEach(function (filePath) {
+      controllerFilesPaths.forEach(function loadController(filePath) {
         var controllerInstance;
         var controllerAbsPath = path.join(controllersDir, filePath);
         var controllerName = getControllerNameFromFilePath(controllerAbsPath);
