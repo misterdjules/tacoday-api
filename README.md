@@ -6,7 +6,8 @@ HashiCorp Vault.
 
 It is a simplistic REST API server written in Node.js. It has a single
 endpoint, `GET /wotd`, that connects to the Facebook API to determine what the
-"word of the day" is at a local tacos place in Vancouver to get special deals.
+"word of the day" to get special deals at [La
+Taqueria](facebook.com/LaTaqueria), a tacos restaurant in Vancouver.
 
 ## Running a tacoday-api server
 
