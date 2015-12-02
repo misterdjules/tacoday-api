@@ -31,7 +31,7 @@ function getWotdFromPost(post) {
   // [ ] would work. Since they're equivalent and we need the third-party
   // regexp module to support unicode letter categories, we use [ ].
   wotdRegexp = XRegExp('#WOTD\:[ ]*?(\\pL+)', 'i');
-  match = post.message.match(wotdRegexp);  
+  match = post.message.match(wotdRegexp);
   if (match)
     return match[1];
 
@@ -119,7 +119,7 @@ function getWotd(req, res, next) {
   });
 
   fbApiReq.on('error', function onError(err) {
-    req.log.erro({err: err}, 'Error when querying FB API');
+    req.log.error({err: err}, 'Error when querying FB API');
     return next(err);
   });
 }
